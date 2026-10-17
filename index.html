@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #f7f5f3;
+        color: #111;
+    }
+
+    a {
+        margin: 0 15px;
+        color: #111;
+        font-size: smaller;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    a:hover { color: #b88b4a; }
+
+    h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    h5 {
+        font-size: smaller;
+        letter-spacing: 5px;
+        margin: 0;
+        color: #555;
+    }
+
+    hr {
+        border: 0.5px solid #ddd;
+        margin: 20px 0;
+    }
+
+    .navbar {
+        text-align: center;
+        background: linear-gradient(to right, #fdf6f0, #f7f0e8);
+        padding: 25px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+       
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            animation: fadeInUp 6s ease-in-out;
+        }
+         .text{
+            flex: 5px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-justify: inter-cluster;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .image img{
+            max-width: 400px;
+            height: auto;
+            color-interpolation-filters: auto;
+            padding: 0px;
+            animation: float 6s ease-in-out infinite;
+            cursor: pointer ;
+        }
+        @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+        }
+        .dior img {
+        animation: float 6s ease-in-out infinite;
+        max-width: 450px;
+        height: auto;
+        color-interpolation-filters: auto;
+        padding: 5px;
+        cursor: pointer;
+        }
+        .Diors{
+            display: flex;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-justify: inter-cluster;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+        }
+        .YSL img {
+            animation: float 6s ease-in-out infinite;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .YSLs{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-justify: inter-cluster;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+          .LV{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            
+        }
+        .text-Lv{
+            flex: 5px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-justify: inter-cluster;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .LV-image img {
+            animation: float 8s ease-in-out infinite;
+            max-width: 220px;
+            height: auto;
+            color-interpolation-filters: auto;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .mar {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #555;
+        }
+        .contact {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .contact img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .contact h2 {
+            margin: 5px 0;
+
+        }
+        .contact p {
+            margin: 2px 0;
+            font-size: 20px;
+            color: #000000;
+        }
+        .social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social img {
+            width: 40px;
+            height: 40px;
+        }
+         .social a:hover img {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+        .mar span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 20s linear infinite;
+        }
+        .mar {
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+            letter-spacing: 1px;
+            background-color: #fafafa;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+       /* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 1001;
+}
+.scroll-to-top:hover {
+    background-color: rgb(252, 0, 0);
+}
+ </style>
+<body>
+    <div class="navbar">
+    <h1>Rare Secrets</h1>
+    <h5>Luxury Bags Collection</h5>
+    <br>
+    <a href="index.html">Home</a>
+    <a href="Chanel.html">Chanel</a>
+    <a href="Dior.html">Dior</a>
+    <a href="YSL.html">YSL</a>
+    <a href="Lv.html">Louis Vuitton</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+    <br><br>
+    <div class="container">
+    <div class="text">
+        <p> A Chanel bag is the essence of timeless elegance. Each piece is crafted with meticulous attention to detail, reflecting sophistication and luxury. Owning one is more than fashion—it’s a statement of confidence and style. It elevates every outfit, turning ordinary moments into unforgettable ones. With a Chanel bag, you carry not just a bag, but a legacy of grace and refinement.</p>
+    </div>
+        <div class="image">
+            <img src="Home/j.jpg" alt="">
+            <img src="Home/m.jpg" alt="" >
+        </div>
+</div><br><br><hr>
+
+     <div class="Dior">
+        <div class="Diors">
+        <p> A Dior bag is more than an accessory—its a statement. Its sleek design turns heads wherever you go. Every stitch speaks of craftsmanship and luxury. Carrying it feels like owning a piece of art. Style, elegance, and power come together in one iconic bag.</p>
+    </div>
+        <div class="dior img" >
+        <img src="Home/d.jpg" alt="">
+        <img src="Home/dior.jpg" alt="" >
+        <img src="Home/ddd.jpg" alt="" width="500px">
+    </div>
+</div><br><hr>
+
+    <div class="YSL">
+     <div class="YSLs">
+     <p>A YSL bag is the ultimate statement of elegance and style. Its sleek design instantly elevates any outfit, day or night. Every detail reflects impeccable craftsmanship and luxury. Carrying it exudes confidence without a single word. Its iconic presence turns ordinary moments into unforgettable ones. YSL blends timeless sophistication with a daring edge. Owning a YSL bag is owning a piece of fashion that commands attention wherever you go.</p>
+    </div>
+     <div class="YSL img">
+        <img src="Home/y.jpg" alt="" width="1000px">
+        <img src="Home/ysl.jpg" alt="" width="450px" height="738px">
+    </div>
+</div><br>
+<hr><br><br><br>
+    <div class="LV">
+    <div class="text-Lv">
+    <p> An LV bag is the perfect mix of luxury and timeless style. Its iconic monogram makes every outfit instantly more elegant. Crafted with precision, it showcases exceptional quality and attention to detail. Carrying it radiates confidence and sophistication effortlessly. Each bag tells a story of heritage, fashion, and prestige. Louis Vuitton turns everyday accessories into symbols of status and style. Owning an LV bag is owning a piece of fashion history that never goes out of style.  </p>
+    </div>
+    <div class="LV-image">
+        <img src="Home/3.jpg" alt="">
+        <img src="Home/belling.jpg" alt="">
+        <img src="Home/za.jpg" alt="">
+        <img src="Home/221.jpg" alt="">
+    </div>
+</div><br><br><br>
+<center>
+  <div class="social">
+         <a href="https://www.facebook.com/share/19qYwDc2SF/?mibextid=wwXIfr" target="_blank">
+             <img src="Home/FB.jpg" alt="Facebook">
+         </a>
+         <a href="https://www.instagram.com/_.lifeaskanha._?igsh=Y25lbXpkdDc2dGZ5&utm_source=qr" target="_blank">
+             <img src="Home/IG.jpg" alt="Instagram">
+         </a>
+     </div>
+</center>
+<hr>
+
+
+<Marquee class="mar" behavior="alternate" direction="left" scrollamount="10"> Create by: Sork Kanha | Major: MIS (Year1 Sem2) | Group: SW15 | Lecturer: Ry Visan
+    <img src="Home/Setec.jpg" alt="" width="40px" height="40px">
+</Marquee>
+ <a href="#" class="scroll-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>

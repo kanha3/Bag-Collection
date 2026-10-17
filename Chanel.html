@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+        body {
+            padding: 10px;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fcfcfc;
+            color: #111;
+        }
+
+        nav h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: smaller;
+            letter-spacing: 5px;
+            color: #333;
+            margin: 0;
+        }
+
+        a {
+            margin-right: 20px;
+            color: #000;
+            font-size: smaller;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #555;
+        }
+
+        hr {
+            border: 0.5px solid #ddd;
+            margin: 10px 0 30px 0;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            margin: 10px auto 0 auto;
+            background-color: #000;
+            opacity: 0.2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        p {
+            text-align: center;
+            color: #7c7c7c;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .product-box {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .product-box:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(73, 71, 71, 0.15);
+        }
+
+        .product-box img {
+            width: 100%;
+            max-width: 330px;
+            height: auto;
+            border-radius: 10px;
+            transition: filter 0.3s ease;
+        }
+
+        .product-box:hover img {
+            filter: brightness(0.9);
+        }
+
+        .product-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            margin: 10px 0 5px 0;
+            font-size: 18px;
+        }
+
+        .product-price {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            color: #000000;
+            font-size: 16px;
+        }
+
+        .social a {
+            margin: 0 10px;
+            display: inline-block;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .social a img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .social a:hover img {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+
+        .mar {
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+            letter-spacing: 1px;
+            background-color: #fafafa;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .mar span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+       .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 1001;
+}
+.scroll-to-top:hover {
+    background-color: rgb(252, 0, 0);
+}
+
+    </style>
+
+</head>
+<body>
+    <center>
+        <nav>
+            <h5>Rare Secret--Free Shipping W/10000+</h5>
+        </nav>
+        <hr>
+        <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+    </center>
+   
+      <h2>CHANEL</h2>
+
+    <div class="product-grid">
+  <div class="product-box">
+    <img src="Chanel bag/photo_1_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Chanel 19</div>
+    <div class="product-price">$19000</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_2_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Mini classic</div>
+    <div class="product-price">$1200</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_3_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Ms.Chanel</div>
+    <div class="product-price">$13500</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_4_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">1998 Chanel</div>
+    <div class="product-price">$24000</div> 
+  </div>
+// comment
+  <div class="product-box">
+    <img src="Chanel bag/photo_5_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Handbag Classic</div>
+    <div class="product-price">$11800</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_6_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Chanel 22</div>
+    <div class="product-price">$2200</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_7_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Chanel U</div>
+    <div class="product-price">$2500</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_8_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Chanel 11</div>
+    <div class="product-price">$4000</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_9_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">CH-nel</div>
+    <div class="product-price">$2800</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_10_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Deja Chanel</div>
+    <div class="product-price">$8500</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_11_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Vou CHANEL</div>
+    <div class="product-price">$4000</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_12_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">CHanel</div>
+    <div class="product-price">$4500</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_13_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">LA Chanel</div>
+    <div class="product-price">$56000</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_14_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">Lady CL</div>
+    <div class="product-price">$3500</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_15_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">1990 Chanel</div>
+    <div class="product-price">$6000</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_16_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">C-Montaign</div>
+    <div class="product-price">$6500</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_17_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">CH 98</div>
+    <div class="product-price">$3700</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_18_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">CHNEL NEL</div>
+    <div class="product-price">$7250</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_19_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">NeLLy CH </div>
+    <div class="product-price">$2800</div>
+  </div>
+
+  <div class="product-box">
+    <img src="Chanel bag/photo_20_2025-09-22_16-09-17.jpg" alt="">
+    <div class="product-title">78 CHANEL</div>
+    <div class="product-price">$250</div>
+  </div>
+</div><br><br><br>
+<p>Discover more in CHANEL boutiques</p>
+<p>Our creations are thoughtfully curated by each of our boutiques. To discover more, we invite you to find the boutique nearest you.</p>
+<h1 align="center">Chanel</h1>
+<center>
+  <div class="social">
+         <a href="https://www.facebook.com/share/19qYwDc2SF/?mibextid=wwXIfr" target="_blank">
+             <img src="Home/FB.jpg" alt="Facebook">
+         </a>
+         <a href="https://www.instagram.com/_.lifeaskanha._?igsh=Y25lbXpkdDc2dGZ5&utm_source=qr" target="_blank">
+             <img src="Home/IG.jpg" alt="Instagram">
+         </a>
+     </div>
+</center>
+<hr>
+<Marquee class="mar" behavior="alternate" direction="left" scrollamount="10">Create by: Sork Kanha | Major: MIS (Year1 Sem2) | Group: SW15 | Lecturer: Ry Visan
+  <img src="Home/Setec.jpg" alt="" width="40px" height="40px">
+</Marquee>
+<a href="#" class="scroll-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>
